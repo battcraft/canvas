@@ -1,0 +1,207 @@
+{
+  "company": "ZAZEN SYSTEMS",
+  "voice_dna": {
+    "core_personality": {
+      "archetype": "The Architect",
+      "description": "Thoughtful engineer meets pragmatic business leader. We build systems that solve real problems, not tech for tech's sake.",
+      "influences": [
+        "Tesla's engineering focus with Apple's design sensibility",
+        "Stripe's developer-first clarity with Salesforce's enterprise credibility",
+        "Patagonia's environmental mission with McKinsey's analytical rigor"
+      ]
+    },
+    "tone_attributes": {
+      "technical_depth": {
+        "level": 8,
+        "description": "Deep technical knowledge presented accessibly. Use precise terminology (GWP, superheat, COP) but always explain why it matters in business terms.",
+        "examples": [
+          "✅ 'R290 natural refrigerant (GWP=3) reduces environmental impact 99.8% vs. R134a while improving efficiency 10-15%—lowering both carbon footprint and energy costs.'",
+          "❌ 'R290 is better for the environment.'"
+        ]
+      },
+      "confidence_level": {
+        "level": 7,
+        "description": "Confident category creator, not arrogant market dominator. We're building the future but acknowledge we're early.",
+        "examples": [
+          "✅ 'ZAZEN is pioneering Intelligence-First cold chain with 2-4 week failure prediction—technology that didn't exist in commercial refrigeration until now.'",
+          "❌ 'ZAZEN is the #1 smart freezer company in India.' (premature claim)",
+          "❌ 'We might have some interesting features.' (under-confident)"
+        ]
+      },
+      "formality": {
+        "level": 6,
+        "description": "Professional but not stuffy. Use contractions naturally, vary sentence length, but maintain credibility.",
+        "examples": [
+          "✅ 'Traditional freezers waste 30-50% of energy through on-off cycling. It's like driving with your foot toggling between gas and brake—exhausting and inefficient.'",
+          "❌ 'One must consider the thermodynamic inefficiencies inherent in duty-cycle-based compressor operation.' (too formal)",
+          "❌ 'Old freezers suck at saving energy lol' (too casual)"
+        ]
+      },
+      "storytelling_approach": {
+        "level": 8,
+        "description": "Data-driven narratives. Every story leads with customer pain, quantifies the problem, then demonstrates solution with metrics.",
+        "structure": [
+          "1. Customer context (who, industry, scale)",
+          "2. Specific pain point with quantified impact (₹8.4L annual waste, 14 spoilage incidents)",
+          "3. ZAZEN solution deployed (which products, timeline)",
+          "4. Measurable outcomes (37% savings, 18-month ROI, 3-week early warning)",
+          "5. Unexpected benefit or insight (6hrs/week manager time freed)"
+        ]
+      },
+      "transparency": {
+        "level": 9,
+        "description": "Radically honest about trade-offs, limitations, and where we're not the best fit.",
+        "examples": [
+          "✅ 'Pipeline Architecture delivers 50% energy savings but requires 2-10 units at one location—not ideal for single-unit retailers or mobile applications.'",
+          "✅ 'Retrofit ROI is 18-24 months. If your freezers are <5 years old and energy costs are low, the business case may be weak.'",
+          "❌ 'ZAZEN works for everyone!' (dishonest oversimplification)"
+        ]
+      },
+      "urgency": {
+        "level": 5,
+        "description": "Problem-focused urgency, not artificial scarcity. Emphasize cost of inaction (spoilage, energy waste, compliance risk) not FOMO.",
+        "examples": [
+          "✅ 'Every day without predictive maintenance means higher risk of unplanned downtime—the average cold storage facility loses ₹2.5L per failure incident.'",
+          "❌ 'Limited time offer! Only 5 units left!' (artificial scarcity)",
+          "❌ 'You should probably think about upgrading someday maybe.' (no urgency)"
+        ]
+      }
+    },
+    "vocabulary_preferences": {
+      "preferred_terms": [
+        "Intelligence-First (not 'smart' generically)",
+        "Predictive maintenance (not 'AI magic')",
+        "EV-grade (not 'automotive-grade' vaguely)",
+        "Fleet orchestration (not 'monitoring' alone)",
+        "Thermal inertia modeling (not 'learning algorithms' vaguely)",
+        "Failure prediction with confidence intervals (not 'early warning')",
+        "ROI, payback period, total cost of ownership (not 'saves money')",
+        "Carbon footprint reduction (not 'green' or 'eco-friendly' alone)"
+      ],
+      "avoid_terms": [
+        "Revolutionary (overused in tech)",
+        "Disruptive (cliché)",
+        "Game-changer (vague hype)",
+        "Best-in-class (unsubstantiated claim)",
+        "Cutting-edge (imprecise)",
+        "Seamless (rarely true)",
+        "Robust (engineering filler word)",
+        "Leverage (business jargon)"
+      ],
+      "metaphors_and_analogies": [
+        "Variable-speed compressor = cruise control (vs gas/brake toggling)",
+        "Predictive maintenance = annual health checkup (vs emergency room visit)",
+        "Pipeline Architecture = VRF HVAC (vs window AC units)",
+        "IoT monitoring = flight data recorder (black box transparency)",
+        "DC bus architecture = USB-C power delivery (universal voltage flexibility)",
+        "Thermal inertia = momentum (thermal mass resists temperature change)"
+      ]
+    },
+    "sentence_structure": {
+      "average_length": "12-18 words",
+      "variety": "Mix short punchy statements (5-8 words) with detailed explanations (20-30 words)",
+      "rhythm": "Vary structure—declarative, question, list, quote—to maintain engagement",
+      "examples": [
+        "Short impact: 'Traditional freezers waste energy. ZAZEN doesn't.'",
+        "Medium detail: 'The ZF-500M eliminates inverter losses with native 48V DC operation, delivering 8-12% efficiency gains.'",
+        "Long explanation: 'When ABC Restaurant deployed ZAZEN retrofit kits across 25 locations, they uncovered a hidden ₹8.4 lakh annual drain from inefficient compressor cycling—a problem invisible until real-time monitoring revealed the pattern.'"
+      ]
+    },
+    "paragraph_structure": {
+      "opening": "Lead with the most important insight, question, or data point",
+      "body": "Support with evidence, examples, or technical details",
+      "closing": "Conclude with implication, next step, or transition to next idea",
+      "length": "3-5 sentences for web content, 5-8 for technical docs"
+    },
+    "use_of_data": {
+      "philosophy": "Metrics tell the story. Every claim should have a number.",
+      "specificity": "Use ranges (25-40%) or examples (₹3.1L saved) rather than vague terms ('significant savings')",
+      "context": "Always compare to baseline—'40% savings vs. traditional fixed-speed compressors'",
+      "sources": "Cite when using external data—'According to NABARD cold chain study 2024...'",
+      "examples": [
+        "✅ '37% energy savings (₹3.1 lakh/year) across 25 locations over 18 months'",
+        "✅ '2-4 week failure prediction with 87% confidence based on vibration signatures'",
+        "❌ 'Lots of savings' or 'Pretty accurate predictions'"
+      ]
+    },
+    "emotional_resonance": {
+      "primary_emotions": [
+        "Confidence (you can trust this technology)",
+        "Relief (we solve your invisible problems)",
+        "Curiosity (what else don't you know about your cold chain?)",
+        "Pride (be an early adopter of category-defining tech)"
+      ],
+      "avoid_emotions": [
+        "Fear (don't scare, educate)",
+        "Guilt (don't shame for old equipment)",
+        "Hype (don't over-promise)"
+      ]
+    },
+    "audience_adaptation": {
+      "technical_buyers": {
+        "description": "Engineers, facility managers, operations directors",
+        "tone_adjustments": "Increase technical depth (component specs, protocols, integration), reduce business jargon",
+        "priorities": "Reliability, specifications, integration, maintenance",
+        "example": "'The Astra VCU communicates via CAN bus (ISO 11898) at 500 kbps, supporting J1939 PGNs for seamless integration with existing fleet management systems.'"
+      },
+      "business_buyers": {
+        "description": "CFOs, procurement, sustainability directors",
+        "tone_adjustments": "Lead with ROI and TCO, translate technical benefits to business outcomes",
+        "priorities": "Cost savings, risk reduction, compliance, sustainability metrics",
+        "example": "'ZAZEN delivers 18-24 month payback through 37% energy savings, eliminating spoilage incidents (avg ₹45K each), and reducing emergency repair costs by 70%.'"
+      },
+      "executive_buyers": {
+        "description": "CEOs, board members, investors",
+        "tone_adjustments": "Strategic positioning, competitive advantage, market opportunity",
+        "priorities": "Competitive differentiation, scalability, future-proofing, ESG impact",
+        "example": "'ZAZEN positions your organization as an early adopter of Intelligence-First cold chain—a ₹430-850 crore market opportunity in India with regulatory tailwinds (Kigali Amendment, FSSAI digitization) creating urgency.'"
+      }
+    },
+    "writing_process": {
+      "research_first": "Always load relevant ICP profile, product specs, and competitive context before writing",
+      "outline_structure": "Sketch key points and flow before drafting full content",
+      "draft_quickly": "Get words on page without over-editing initially",
+      "edit_ruthlessly": "Cut filler words, tighten sentences, verify every claim",
+      "read_aloud": "Does it sound natural when spoken? If awkward, revise."
+    }
+  },
+  "content_type_specific_guidance": {
+    "product_descriptions": {
+      "structure": "Problem → Solution → Specifications → Applications → Differentiation",
+      "length": "800-1200 words for flagship products, 400-600 for variants",
+      "must_include": ["Key features with business value", "Technical specs table", "Ideal applications list", "Competitive comparison"]
+    },
+    "case_studies": {
+      "structure": "Customer context → Problem quantified → Solution deployed → Results with metrics → Unexpected insight",
+      "length": "1000-1500 words",
+      "must_include": ["ROI metrics with timeline", "Specific model numbers used", "Before/after comparison", "Customer quote if available"]
+    },
+    "blog_posts": {
+      "structure": "Hook → Problem exploration → Industry context → ZAZEN solution → Actionable takeaway",
+      "length": "1200-2000 words for thought leadership, 800-1200 for product-focused",
+      "must_include": ["SEO keywords naturally integrated", "Internal links to product pages", "CTA for lead capture"]
+    },
+    "sales_emails": {
+      "structure": "Personalized opening → Specific pain point → Brief value prop → Soft CTA",
+      "length": "150-250 words (3-4 short paragraphs)",
+      "must_include": ["Recipient's company/industry reference", "One key metric", "Low-friction next step"]
+    },
+    "technical_documentation": {
+      "structure": "Overview → Architecture → Component specs → Integration guide → Troubleshooting",
+      "length": "As long as necessary for completeness",
+      "must_include": ["Diagrams/tables", "Exact specifications with units", "Warning/caution callouts", "Support contact"]
+    }
+  },
+  "quality_checklist": {
+    "before_delivery": [
+      "✅ Verified all technical specs against product datasheets",
+      "✅ Checked voice consistency (tone attributes 6-8 range)",
+      "✅ Ensured ICP-specific pain points addressed",
+      "✅ Validated all ROI metrics and competitive claims",
+      "✅ Removed filler words (robust, seamless, cutting-edge)",
+      "✅ Varied sentence length and structure",
+      "✅ Included specific model numbers and data points",
+      "✅ Read aloud—does it sound natural?"
+    ]
+  }
+}

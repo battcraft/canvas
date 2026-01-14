@@ -1,0 +1,396 @@
+{
+  "company": {
+    "name": "ZAZEN SYSTEMS",
+    "legal_name": "ZAZEN SYSTEMS Private Limited",
+    "founding_year": 2024,
+    "headquarters": "Bangalore, Karnataka, India",
+    "taglines": [
+      "Intelligence-First Cold Chain Platform",
+      "Where Gemini AI Meets Thermal Engineering",
+      "Where Technology Meets Tranquility",
+      "Transforming Cold Chain from Reactive to Predictive"
+    ],
+    "mission": "To eliminate cold chain waste through predictive intelligence, making commercial refrigeration efficient, reliable, and sustainable.",
+    "vision": "Every commercial freezer on the planet connected, optimized, and failure-free through AI-powered thermal management.",
+    "values": [
+      "Engineering Excellence: We solve hard problems with rigorous technical depth",
+      "Radical Transparency: We acknowledge trade-offs and limitations honestly",
+      "Customer Obsession: We measure success by customer ROI, not our revenue",
+      "Sustainability First: Environmental impact reduction is core, not marketing",
+      "Continuous Learning: Every connected unit makes our intelligence smarter"
+    ]
+  },
+  "positioning": {
+    "category": "Intelligence-First Cold Chain Platform",
+    "category_definition": "ZAZEN SYSTEMS pioneered the Intelligence-First Cold Chain category by combining Gemini-powered cloud intelligence with Edge-AI BLDC controllers and EV-grade hardware. Unlike traditional freezer manufacturers (hardware-only) or IoT monitoring startups (software-only), we deliver predictive control authority with 2-4 week failure prediction and autonomous optimization.",
+    "core_differentiators": [
+      {
+        "differentiator": "Gemini-Powered Fleet Intelligence",
+        "description": "Cloud AI analyzes vibration signatures, thermal patterns, and compressor current draw across 10,000+ connected units to predict failures 2-4 weeks in advance with 87% confidence",
+        "proof_point": "Prevented ₹45K spoilage incident at Mumbai QSR location with 3-week early warning"
+      },
+      {
+        "differentiator": "Edge-AI Local Optimization",
+        "description": "On-device thermal inertia modeling learns product mass, ambient conditions, and door access patterns to optimize cooling cycles without cloud dependency",
+        "proof_point": "Operates autonomously during internet outages—intelligence runs locally, syncs when connected"
+      },
+      {
+        "differentiator": "EV-Grade Hardware Reliability",
+        "description": "Automotive-qualified components (Astra VCU, EV traction inverter, CAN bus) deliver industrial reliability at commercial price points",
+        "proof_point": "BLDC compressor rated for 50,000+ hours MTBF vs 15,000 hours for traditional fixed-speed"
+      },
+      {
+        "differentiator": "Dual Product Strategy",
+        "description": "New premium units (navy/gold design statement) + smart retrofit kits (upgrade existing fleets at 25-30% of replacement cost)",
+        "proof_point": "60% of customers choose retrofit path—18-24 month ROI vs 3-5 years for new units"
+      },
+      {
+        "differentiator": "Flexible Power Architecture",
+        "description": "12V-72V DC native operation eliminates inverter losses (8-12% efficiency gain), enables direct solar integration and mobile applications",
+        "proof_point": "Food truck operators save ₹40-65K annually by eliminating inverter losses + fuel savings"
+      }
+    ],
+    "target_positioning_by_competitor": {
+      "vs_traditional_manufacturers": "ZAZEN adds 40% energy savings + predictive maintenance to commercial-grade reliability",
+      "vs_iot_monitoring_startups": "ZAZEN delivers real hardware efficiency (25-40% savings) vs insights-only monitoring (0-5% impact)",
+      "vs_premium_international": "ZAZEN offers 50-70% lower price + local support + unique navy/gold design at comparable intelligence"
+    }
+  },
+  "product_lines": {
+    "motion_pro_series": {
+      "name": "Motion-Pro Series",
+      "tagline": "Mobile & Off-Grid DC Line",
+      "power": "12V-48V DC Native",
+      "target_applications": "Food trucks, ambulances, delivery vans, solar-powered rural cold storage",
+      "models": ["ZF-200M (200L)", "ZF-300M (300L)", "ZF-400M (400L)", "ZF-500M (500L)"],
+      "price_range": "₹85,000-₹2,45,000",
+      "intelligence_tier": "Essentials → Pro",
+      "key_features": [
+        "Vibration-proof mounting for mobile applications",
+        "GPS-aware pre-loading (route-based thermal management)",
+        "Solar Forecast Sync for off-grid solar installations",
+        "Battery health monitoring and protection"
+      ]
+    },
+    "industrial_smart_series": {
+      "name": "Industrial-Smart Series",
+      "tagline": "High-Capacity 220V/48V Hybrid",
+      "power": "220V AC (48V DC optional for hybrid/backup)",
+      "target_applications": "QSR chains, supermarkets, cold storage, institutional kitchens",
+      "models": ["ZF-628S (598L)", "ZF-828S (798L)", "ZF-1188S (998L)", "ZF-1388S (1360L)"],
+      "price_range": "₹1,50,000-₹3,80,000",
+      "intelligence_tier": "Pro → Enterprise",
+      "key_features": [
+        "2-4 week failure prediction (Enterprise tier)",
+        "EEV 500-pulse precision control (±0.5°C superheat)",
+        "Grid-demand response (automatic peak-shaving)",
+        "Triple-lid access system (minimizes thermal loss)"
+      ]
+    },
+    "titan_series": {
+      "name": "Titan Series",
+      "tagline": "Heavy-Duty DC Refrigeration Units",
+      "power": "48V-72V DC High-Power",
+      "target_applications": "Refrigerated transport, walk-in coolers, industrial mobile cold rooms",
+      "models": ["ZT-298 (Split, 48V)", "ZTS-480 (Monoblock, 48V)", "ZTS-500 (Monoblock, 72V)"],
+      "price_range": "₹2,80,000-₹4,50,000",
+      "intelligence_tier": "Enterprise",
+      "key_features": [
+        "Rapid pulldown (<3hrs to -20°C from 25°C)",
+        "Extreme ambient tolerance (maintains -20°C in +45°C ambient)",
+        "Route-based pre-loading for delivery optimization",
+        "Dual-zone balancing for compartmentalized transport"
+      ]
+    },
+    "retrofit_systems": {
+      "name": "Smart Retrofit Systems",
+      "tagline": "Upgrade Existing Freezers to Intelligence-First",
+      "target_applications": "Existing freezer fleets (Blue Star, Voltas, Rockwell, Western, Elanpro)",
+      "kits": [
+        "Standard Retrofit (₹40-55K): BLDC compressor + EEV + VCU + sensors + Wi-Fi",
+        "Premium Retrofit (₹65-80K): + Nayana HMI + 4G + vibration sensor + 3yr warranty",
+        "Fleet Package (₹6.5-8L for 10 units): + Fleet dashboard + API access + 24/7 support",
+        "Solar Retrofit (₹1.2-1.6L): + 48V DC bus + 1.5kW solar array + LiFePO4 battery"
+      ],
+      "intelligence_tier": "Essentials → Enterprise",
+      "roi": "18-24 months typical payback"
+    },
+    "pipeline_architecture": {
+      "name": "ZAZEN Pipeline Architecture",
+      "tagline": "Centralized Refrigeration | Plate Heat Exchangers | VRF-Style for Cold Chain",
+      "launch_timeline": "Q2 2026 pilot, Q3 2026 commercial launch",
+      "target_applications": "QSR chains, supermarkets, cloud kitchens, cold storage facilities (2-20 cabinets per location)",
+      "configurations": [
+        "Small System (2-5 cabinets): ₹2.2-3.5L, 2-3.5kW cooling",
+        "Medium System (5-10 cabinets): ₹4.5-7.2L, 4-7kW cooling",
+        "Large System (10-20 cabinets): ₹9-15L, 8-15kW cooling"
+      ],
+      "key_advantages": [
+        "30-40% lower total system cost vs individual condensing units",
+        "50% energy savings vs traditional (load-balanced optimization)",
+        "Single outdoor unit simplifies maintenance (1 compressor vs 10)",
+        "PHE evaporators: 40-50% smaller, 15-25% better heat transfer, 30-40% faster defrost"
+      ]
+    }
+  },
+  "intelligence_platform": {
+    "name": "ZAZEN Intelligence Portal",
+    "architecture": {
+      "cloud_layer": "Gemini-Powered Fleet Intelligence",
+      "edge_layer": "Edge-AI On-Device Optimization",
+      "communication": "Wi-Fi + 4G cellular with automatic failover"
+    },
+    "subscription_tiers": [
+      {
+        "tier": "Essentials",
+        "price": "₹0/month (included free)",
+        "features": [
+          "Local thermal inertia modeling",
+          "Basic temperature logging (30-day retention)",
+          "Mobile app (single user)",
+          "Email alerts (critical only)"
+        ],
+        "target": "Single-unit owners, small businesses"
+      },
+      {
+        "tier": "Pro",
+        "price": "₹500/unit/month",
+        "features": [
+          "Everything in Essentials",
+          "7-day failure prediction",
+          "Unlimited historical data",
+          "Multi-user access (5 users)",
+          "Advanced alerts (SMS + WhatsApp)",
+          "Automated compliance reports",
+          "Solar forecast sync",
+          "OTA firmware updates"
+        ],
+        "target": "QSR chains (5-20 locations), small cold storage"
+      },
+      {
+        "tier": "Enterprise",
+        "price": "₹1,500/unit/month",
+        "features": [
+          "Everything in Pro",
+          "2-4 week failure prediction",
+          "Grid-demand response automation",
+          "Cross-fleet learning",
+          "Custom compliance reports (WHO PQS)",
+          "API access for ERP integration",
+          "Dedicated account manager",
+          "24/7 phone support (2hr SLA)",
+          "Quarterly business reviews"
+        ],
+        "target": "Large cold storage (50+ units), pharma distributors, enterprise QSR (100+ locations)"
+      }
+    ]
+  },
+  "go_to_market": {
+    "target_markets_by_priority": [
+      {
+        "priority": 0,
+        "segment": "QSR & Food Service",
+        "tam": "₹50-100 crore",
+        "year_1_goal": "150 units (10-15 customers)"
+      },
+      {
+        "priority": 0,
+        "segment": "Cold Storage & Warehousing",
+        "tam": "₹200-400 crore",
+        "year_1_goal": "200 units (5-8 customers)"
+      },
+      {
+        "priority": 1,
+        "segment": "Pharmaceutical & Healthcare",
+        "tam": "₹50-100 crore",
+        "year_2_goal": "100 units (10-15 customers)"
+      },
+      {
+        "priority": 1,
+        "segment": "Retail & Supermarkets",
+        "tam": "₹30-50 crore",
+        "year_2_goal": "80 units (8-12 customers)"
+      },
+      {
+        "priority": 2,
+        "segment": "Off-Grid & Mobile",
+        "tam": "₹100-200 crore",
+        "year_3_goal": "200 units (30-50 customers)"
+      }
+    ],
+    "sales_motion": {
+      "direct_sales": "Enterprise accounts (50+ units), large cold storage, pharma distributors",
+      "channel_partners": "HVAC/R installation firms, cold chain EPC contractors, facility management companies",
+      "self_service": "Small business retrofit kits via website configurator (planned Year 2)"
+    },
+    "pricing_strategy": {
+      "value_based_tiers": [
+        "Entry (₹40-60K): Basic retrofit, energy savings focus",
+        "Standard (₹60-100K): Full retrofit with monitoring",
+        "Premium (₹1-2L): Advanced features, fleet management",
+        "Luxury (₹2.5-4.5L): Design statement + technology"
+      ],
+      "discounting_policy": [
+        "Volume: 10% off for 10+ units, 15% for 50+, 20% for 100+",
+        "Referral: 5% off for customer referrals (both parties)",
+        "Early Adopter: 20% off for pilot customers (first 50 installations)"
+      ],
+      "financing_options": [
+        "Partner Banks: Bajaj Finserv, HDFC, ICICI (12-36 month terms)",
+        "Government Schemes: NABARD cold chain loans (subsidized interest)",
+        "Energy Savings Financing: Loan repayments match monthly energy savings"
+      ]
+    }
+  },
+  "competitive_landscape": {
+    "traditional_manufacturers": {
+      "players": ["Blue Star", "Voltas", "Rockwell", "Western", "Elanpro"],
+      "strengths": ["Brand recognition", "Distribution network", "Service availability"],
+      "weaknesses": ["Fixed-speed compressors (energy inefficiency)", "No IoT monitoring", "Generic design"],
+      "zazen_positioning": "ZAZEN adds 40% energy savings + predictive maintenance to traditional reliability"
+    },
+    "iot_monitoring_startups": {
+      "players": ["Stellapps", "Freshtohome (monitoring division)", "Cloverly"],
+      "strengths": ["Low upfront cost", "Quick deployment", "Cloud dashboards"],
+      "weaknesses": ["Sensors only (no hardware upgrade)", "0-5% savings (insights only)", "No predictive control authority"],
+      "zazen_positioning": "ZAZEN delivers real hardware efficiency (25-40% savings) vs insights-only"
+    },
+    "premium_international_brands": {
+      "players": ["Liebherr", "True Manufacturing", "Hoshizaki"],
+      "strengths": ["Advanced technology", "Premium build quality", "Global reputation"],
+      "weaknesses": ["₹5-10L price points", "Limited service in India", "8-12 week import lead times"],
+      "zazen_positioning": "ZAZEN offers 50-70% lower price + local support + unique navy/gold design"
+    }
+  },
+  "key_partnerships": {
+    "technology": [
+      "Renesas (Astra VCU MCU supplier)",
+      "Google Cloud (Gemini AI integration for fleet intelligence)",
+      "AWS IoT / Azure IoT (IoT platform connectivity options)"
+    ],
+    "distribution": [
+      "HVAC/R installation firms (retrofit kit installation partners)",
+      "Cold chain EPC contractors (large facility project pipeline)",
+      "Equipment financing partners (Bajaj Finserv, HDFC, ICICI)"
+    ],
+    "strategic": [
+      "Freezer body manufacturers (Rockwell, Ecolda for OEM partnership)",
+      "QSR franchise associations (collective buying programs)",
+      "Cold storage industry associations (market access, advocacy)"
+    ]
+  },
+  "financial_model": {
+    "revenue_streams": [
+      {
+        "stream": "Hardware Sales",
+        "description": "New units (Motion-Pro, Industrial-Smart, Titan) + Retrofit kits",
+        "year_1_target": "₹8-12 crore (350 units deployed)",
+        "gross_margin": "35-45%"
+      },
+      {
+        "stream": "Intelligence Subscriptions",
+        "description": "Pro (₹500/unit/mo) + Enterprise (₹1,500/unit/mo) recurring revenue",
+        "year_1_target": "₹15-25 lakh ARR (first-year free, renewals start Year 2)",
+        "gross_margin": "75-85%"
+      },
+      {
+        "stream": "Maintenance & Support",
+        "description": "ZZ-CARE Standard/Premium/Enterprise annual plans",
+        "year_1_target": "₹12-18 lakh (20% attach rate on hardware sales)",
+        "gross_margin": "50-60%"
+      },
+      {
+        "stream": "Installation Services",
+        "description": "Retrofit kit installation (₹5-10K per unit)",
+        "year_1_target": "₹8-12 lakh (partner-delivered, ZAZEN takes 30% margin)",
+        "gross_margin": "30%"
+      }
+    ],
+    "unit_economics": {
+      "retrofit_kit": {
+        "selling_price": "₹65,000 (Premium Retrofit avg)",
+        "cogs": "₹38,000 (components + assembly)",
+        "gross_margin": "₹27,000 (41.5%)",
+        "sales_cost": "₹8,000 (CAC: demos, trials, sales time)",
+        "contribution_margin": "₹19,000 (29.2%)"
+      },
+      "new_unit": {
+        "selling_price": "₹2,50,000 (Industrial-Smart ZF-628S avg)",
+        "cogs": "₹1,45,000 (components + freezer body + assembly)",
+        "gross_margin": "₹1,05,000 (42%)",
+        "sales_cost": "₹25,000 (CAC: longer sales cycle, higher touch)",
+        "contribution_margin": "₹80,000 (32%)"
+      },
+      "intelligence_subscription": {
+        "selling_price": "₹1,500/month (Enterprise avg)",
+        "cogs": "₹200/month (cloud compute + data storage + support)",
+        "gross_margin": "₹1,300/month (86.7%)",
+        "ltv": "₹46,800 (3-year avg customer lifetime)",
+        "cac": "₹4,000 (upsell from hardware sale)",
+        "ltv_cac_ratio": "11.7:1"
+      }
+    }
+  },
+  "brand_assets": {
+    "colors": {
+      "primary": "Deep Navy Blue (#1B2845) - sophistication, trust, technology",
+      "accent": "Gold (#D4AF37) - premium, excellence, warmth",
+      "neutrals": ["White (#FFFFFF)", "Light Gray (#F5F5F5)", "Dark Gray (#2C3E50)"]
+    },
+    "typography": {
+      "headings": "Inter Bold / Montserrat Bold (modern, geometric, clean)",
+      "body": "Inter Regular / Open Sans (readable, professional)",
+      "technical": "JetBrains Mono (for code, specs, data)"
+    },
+    "design_language": {
+      "aesthetic": "Minimalist Industrial — Clean lines, geometric patterns, tech-forward",
+      "inspiration": "Tesla (automotive precision) + Apple (simplicity) + Patagonia (environmental mission)",
+      "physical_product": "Navy blue powder-coated freezer cabinets with gold geometric linework"
+    }
+  },
+  "regulatory_compliance": {
+    "certifications_held": [
+      "ISO 9001:2015 (Quality Management)",
+      "BIS Certification (Bureau of Indian Standards for commercial refrigeration)",
+      "FSSAI Compliant (Food Safety and Standards Authority of India)"
+    ],
+    "certifications_in_progress": [
+      "WHO-E003 (Performance specification for vaccine refrigerators/freezers - for pharma market entry)",
+      "CE Marking (for future international expansion)",
+      "Energy Star equivalent (India-specific energy efficiency rating)"
+    ],
+    "environmental_compliance": [
+      "R290 refrigerant (GWP=3) - Kigali Amendment compliant",
+      "CFC-free insulation (cyclopentane-blown polyurethane)",
+      "RoHS compliant electronics (lead-free, mercury-free)",
+      "WEEE compliance plan for end-of-life equipment recycling"
+    ]
+  },
+  "contact_information": {
+    "general_inquiries": {
+      "email": "info@zazensystems.com",
+      "phone": "+91-XXXX-XXXXXX",
+      "website": "https://zazensystems.com"
+    },
+    "sales": {
+      "email": "sales@zazensystems.com",
+      "phone": "+91-XXXX-XXXXXX"
+    },
+    "technical_support": {
+      "email": "support@zazensystems.com",
+      "phone": "+91-XXXX-XXXXXX (24/7 Enterprise hotline)"
+    },
+    "partnerships": {
+      "email": "partners@zazensystems.com"
+    },
+    "pipeline_systems": {
+      "email": "pipeline@zazensystems.com",
+      "phone": "+91-XXXX-XXXXXX"
+    },
+    "social_media": {
+      "linkedin": "https://linkedin.com/company/zazen-systems",
+      "twitter": "https://twitter.com/zazensystems",
+      "instagram": "https://instagram.com/zazensystems"
+    }
+  }
+}
