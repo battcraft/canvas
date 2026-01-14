@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAZEN SYSTEMS | Intelligence-First Cold Chain Platform</title>
+    <meta name="description" content="Precision Cooling. Solar-Native. IoT-Driven. India's most advanced commercial refrigeration lineup—engineered for ±0.5°C stability, up to 40% energy savings, and end-to-end visibility.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* ZAZEN Brand Colors */
+            --navy-primary: #1B2845;
+            --navy-dark: #0F1622;
+            --gold-accent: #D4AF37;
+            --gold-light: #E8D4A0;
+            --beige-bg: #F5F1E8;
+            --cream-light: #FAF8F3;
+            --brown-text: #4A3428;
+            --gray-light: #E8E5DD;
+            --white: #FFFFFF;
+
+            /* Typography */
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+
+            /* Spacing */
+            --section-padding: 120px;
+            --container-max: 1400px;
+
+            /* Transitions */
+            --transition-smooth: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-spring: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            color: var(--brown-text);
+            background: var(--beige-bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: var(--cream-light);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--gray-light);
+            transition: var(--transition-smooth);
+        }
+
+        header.scrolled {
+            background: rgba(250, 248, 243, 0.95);
+            box-shadow: 0 4px 20px rgba(27, 40, 69, 0.08);
+        }
+
+        nav {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-square {
+            width: 48px;
+            height: 48px;
+            background: var(--navy-primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--gold-accent);
+            font-family: var(--font-mono);
+            border: 2px solid var(--gold-accent);
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--navy-primary);
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--brown-text);
+            font-weight: 500;
+            font-size: 15px;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold-accent);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            display: flex;
+            gap: 16px;
+        }
+
+        .btn {
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 15px;
+            text-decoration: none;
+            transition: var(--transition-spring);
+            cursor: pointer;
+            border: none;
+            font-family: var(--font-primary);
+        }
+
+        .btn-primary {
+            background: var(--navy-primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--navy-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(27, 40, 69, 0.25);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--navy-primary);
+            border: 2px solid var(--navy-primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--navy-primary);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 100px;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--cream-light) 0%, var(--beige-bg) 100%);
+        }
+
+        .hero-container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .hero-content {
+            transform: translateY(40px);
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+            animation-delay: 0.2s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold-accent);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .hero-title {
+            font-size: 72px;
+            font-weight: 900;
+            line-height: 1.1;
+            color: var(--brown-text);
+            margin-bottom: 20px;
+        }
+
+        .hero-title-highlight {
+            color: var(--navy-primary);
+        }
+
+        .hero-title-accent {
+            color: var(--gold-accent);
+            font-style: italic;
+            font-weight: 300;
+            display: block;
+        }
+
+        .hero-description {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--brown-text);
+            margin-bottom: 40px;
+            max-width: 580px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .stat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-value {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--navy-primary);
+            font-family: var(--font-mono);
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--brown-text);
+            opacity: 0.8;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* 3D Product Viewer */
+        .hero-product {
+            position: relative;
+            perspective: 1200px;
+        }
+
+        .product-3d-container {
+            width: 600px;
+            height: 600px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.3s ease;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 30px 60px rgba(27, 40, 69, 0.2));
+            transform: rotateY(var(--rotate-y, 0deg)) rotateX(var(--rotate-x, 0deg));
+            transition: transform 0.1s ease-out;
+        }
+
+        .product-highlight {
+            position: absolute;
+            bottom: 50px;
+            right: -50px;
+            background: var(--white);
+            padding: 24px 32px;
+            border-radius: 12px;
+            box-shadow: 0 20px 50px rgba(27, 40, 69, 0.15);
+            transform: translateZ(50px);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateZ(50px) translateY(0); }
+            50% { transform: translateZ(50px) translateY(-20px); }
+        }
+
+        .highlight-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--gold-accent);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .highlight-value {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--navy-primary);
+            font-family: var(--font-mono);
+        }
+
+        /* Sections */
+        section {
+            padding: var(--section-padding) 40px;
+            position: relative;
+        }
+
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-label {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold-accent);
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: 56px;
+            font-weight: 800;
+            color: var(--brown-text);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .section-description {
+            font-size: 18px;
+            color: var(--brown-text);
+            opacity: 0.8;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Cold Chain Solutions */
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .solution-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 48px;
+            transition: var(--transition-spring);
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(27, 40, 69, 0.12);
+            border-color: var(--gold-accent);
+        }
+
+        .solution-icon {
+            font-size: 56px;
+            margin-bottom: 24px;
+        }
+
+        .solution-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--navy-primary);
+            margin-bottom: 16px;
+        }
+
+        .solution-description {
+            font-size: 16px;
+            color: var(--brown-text);
+            opacity: 0.8;
+            line-height: 1.8;
+        }
+
+        /* Product Selector Wizard */
+        .product-selector {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 60px;
+            box-shadow: 0 30px 80px rgba(27, 40, 69, 0.1);
+        }
+
+        .wizard-step {
+            display: none;
+        }
+
+        .wizard-step.active {
+            display: block;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .step-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--navy-primary);
+            margin-bottom: 32px;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .option-card {
+            background: var(--cream-light);
+            border: 3px solid transparent;
+            border-radius: 12px;
+            padding: 32px;
+            cursor: pointer;
+            transition: var(--transition-spring);
+        }
+
+        .option-card:hover {
+            border-color: var(--gold-accent);
+            transform: scale(1.02);
+        }
+
+        .option-card.selected {
+            background: var(--navy-primary);
+            color: var(--white);
+            border-color: var(--gold-accent);
+        }
+
+        .option-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .option-description {
+            font-size: 14px;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        .wizard-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        /* Product Showcase */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: var(--transition-spring);
+            cursor: pointer;
+        }
+
+        .product-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 30px 70px rgba(27, 40, 69, 0.15);
+        }
+
+        .product-image-container {
+            background: linear-gradient(135deg, var(--navy-primary) 0%, var(--navy-dark) 100%);
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--gold-accent);
+            color: var(--navy-primary);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .product-card-image {
+            max-width: 100%;
+            max-height: 220px;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+        }
+
+        .product-info {
+            padding: 32px;
+        }
+
+        .product-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--navy-primary);
+            margin-bottom: 8px;
+        }
+
+        .product-capacity {
+            font-size: 14px;
+            color: var(--gold-accent);
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .product-features {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+
+        .product-features li {
+            font-size: 14px;
+            color: var(--brown-text);
+            margin-bottom: 8px;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .product-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--gold-accent);
+            font-weight: 700;
+        }
+
+        .product-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid var(--gray-light);
+        }
+
+        .price-value {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--navy-primary);
+            font-family: var(--font-mono);
+        }
+
+        .price-label {
+            font-size: 12px;
+            color: var(--brown-text);
+            opacity: 0.6;
+        }
+
+        /* Features Section */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 40px;
+            background: var(--white);
+            border-radius: 16px;
+            transition: var(--transition-spring);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(27, 40, 69, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 64px;
+            margin-bottom: 24px;
+        }
+
+        .feature-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--navy-primary);
+            margin-bottom: 12px;
+        }
+
+        .feature-description {
+            font-size: 15px;
+            color: var(--brown-text);
+            opacity: 0.8;
+            line-height: 1.7;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--navy-primary) 0%, var(--navy-dark) 100%);
+            color: var(--white);
+            text-align: center;
+            border-radius: 24px;
+            padding: 80px 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -30%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .cta-title {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 24px;
+            position: relative;
+        }
+
+        .cta-description {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            position: relative;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            position: relative;
+        }
+
+        .btn-cta {
+            background: var(--gold-accent);
+            color: var(--navy-primary);
+        }
+
+        .btn-cta:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--navy-dark);
+            color: var(--white);
+            padding: 80px 40px 40px;
+        }
+
+        .footer-container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .footer-description {
+            font-size: 15px;
+            opacity: 0.8;
+            line-height: 1.8;
+        }
+
+        .footer-column h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--gold-accent);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 14px;
+            opacity: 0.8;
+            transition: var(--transition-smooth);
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            color: var(--gold-accent);
+        }
+
+        .footer-bottom {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.6;
+        }
+
+        /* Scroll Animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Parallax Effect */
+        .parallax {
+            transition: transform 0.5s ease-out;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 56px;
+            }
+
+            .product-3d-container {
+                margin: 0 auto;
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 16px 20px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 40px;
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .products-grid,
+            .solutions-grid,
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-3d-container {
+                width: 100%;
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <a href="#" class="logo">
+                <div class="logo-square">Z</div>
+                <span class="logo-text">ZAZEN SYSTEMS</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#selector">Product Selector</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="#demo" class="btn btn-secondary">Book Demo</a>
+                <a href="#order" class="btn btn-primary">Place Order</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-subtitle">ZAZEN SYSTEMS — COLD CHAIN INTELLIGENCE</div>
+                <h1 class="hero-title">
+                    <span class="hero-title-highlight">Precision Cooling.</span>
+                    <span class="hero-title-accent">Solar-Native. IoT-Driven.</span>
+                </h1>
+                <p class="hero-description">
+                    India's most advanced commercial refrigeration lineup—engineered for
+                    <strong>±0.5°C stability</strong>, up to <strong>40% energy savings</strong>,
+                    and end-to-end visibility. From last-mile carts to global logistics fleets,
+                    ZaZen ensures your cold chain <strong>never breaks</strong>.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value">±0.5°C</div>
+                        <div class="stat-label">Temperature Stability</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">40%</div>
+                        <div class="stat-label">Energy Savings</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">24/7</div>
+                        <div class="stat-label">IoT Monitoring</div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#selector" class="btn btn-primary">Get Quick Quote</a>
+                    <a href="#products" class="btn btn-secondary">Explore Products</a>
+                </div>
+            </div>
+
+            <div class="hero-product">
+                <div class="product-3d-container" id="product3d">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%23f5f1e8'/%3E%3Crect x='150' y='180' width='500' height='280' rx='12' fill='%231B2845'/%3E%3Crect x='155' y='185' width='490' height='270' rx='10' fill='%232a3f5f'/%3E%3Cpath d='M200 185 L300 185 L300 455 L200 455 Z' fill='%233d5a7f' opacity='0.3'/%3E%3Cpath d='M310 185 L510 185 L510 455 L310 455 Z' fill='%233d5a7f' opacity='0.5'/%3E%3Cpath d='M520 185 L640 185 L640 455 L520 455 Z' fill='%233d5a7f' opacity='0.3'/%3E%3Cpath d='M200 200 L250 220 L300 200' stroke='%23D4AF37' stroke-width='2' fill='none'/%3E%3Cpath d='M320 200 L420 220 L500 200' stroke='%23D4AF37' stroke-width='2' fill='none'/%3E%3Cpath d='M560 200 L600 220 L640 200' stroke='%23D4AF37' stroke-width='2' fill='none'/%3E%3Ctext x='400' y='320' font-family='Inter' font-size='32' font-weight='800' fill='%23D4AF37' text-anchor='middle'%3EZAZEN%3C/text%3E%3Ctext x='400' y='350' font-family='Inter' font-size='16' font-weight='600' fill='%23D4AF37' text-anchor='middle'%3ESYSTEMS%3C/text%3E%3Crect x='620' y='380' width='40' height='60' rx='4' fill='%23D4AF37'/%3E%3Ctext x='640' y='415' font-family='monospace' font-size='24' font-weight='700' fill='%231B2845' text-anchor='middle'%3E❄%3C/text%3E%3C/svg%3E"
+                         alt="ZAZEN Premium Freezer"
+                         class="product-image"
+                         id="productImg">
+                    <div class="product-highlight">
+                        <div class="highlight-label">Energy Savings</div>
+                        <div class="highlight-value">40%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cold Chain Solutions -->
+    <section id="solutions">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <div class="section-label">COLD CHAIN SOLUTIONS</div>
+                <h2 class="section-title">Built for Every<br>Cold Chain Challenge</h2>
+                <p class="section-description">
+                    Whether you're storing premium ice cream, managing pharmaceutical cold chains,
+                    or powering off-grid rural dairies, ZAZEN has a solution engineered for your needs.
+                </p>
+            </div>
+
+            <div class="solutions-grid">
+                <div class="solution-card fade-in-up">
+                    <div class="solution-icon">🍦</div>
+                    <h3 class="solution-title">Ice Cream & Frozen Desserts</h3>
+                    <p class="solution-description">
+                        Consistent deep-freeze for premium products. ±0.5°C stability prevents ice crystal
+                        formation, preserving texture and extending shelf appeal 30-40% longer.
+                    </p>
+                </div>
+
+                <div class="solution-card fade-in-up">
+                    <div class="solution-icon">🥛</div>
+                    <h3 class="solution-title">Dairy & Cold Storage</h3>
+                    <p class="solution-description">
+                        Freshness from farm to table. Triple-lid access minimizes temperature fluctuations
+                        during high-frequency access. Solar-ready for off-grid dairy cooperatives.
+                    </p>
+                </div>
+
+                <div class="solution-card fade-in-up">
+                    <div class="solution-icon">💊</div>
+                    <h3 class="solution-title">Pharmaceutical & Healthcare</h3>
+                    <p class="solution-description">
+                        WHO PQS-compliant temperature control with tamper-proof logs. 2-4 week failure
+                        prediction prevents ₹10-50L inventory losses from unplanned downtime.
+                    </p>
+                </div>
+
+                <div class="solution-card fade-in-up">
+                    <div class="solution-icon">🚚</div>
+                    <h3 class="solution-title">Logistics & Distribution</h3>
+                    <p class="solution-description">
+                        Fleet-wide visibility with predictive analytics. Route-based pre-loading and
+                        GPS-aware thermal management optimize last-mile delivery performance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section id="products">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <div class="section-label">ICE CREAM PROFESSIONAL SERIES</div>
+                <h2 class="section-title">Three Sizes.<br>Infinite Possibilities.</h2>
+                <p class="section-description">
+                    Purpose-built for dairy and ice cream applications with triple-door access,
+                    EV-grade intelligence, and premium navy-gold design.
+                </p>
+            </div>
+
+            <div class="products-grid">
+                <!-- 550L Model -->
+                <div class="product-card fade-in-up">
+                    <div class="product-image-container">
+                        <div class="product-badge">Most Popular</div>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect x='50' y='80' width='300' height='180' rx='8' fill='%231B2845'/%3E%3Crect x='55' y='85' width='290' height='170' rx='6' fill='%232a3f5f'/%3E%3Cpath d='M80 90 L150 90 L150 250 L80 250 Z' fill='%233d5a7f' opacity='0.3'/%3E%3Cpath d='M160 90 L280 90 L280 250 L160 250 Z' fill='%233d5a7f' opacity='0.5'/%3E%3Cpath d='M290 90 L340 90 L340 250 L290 250 Z' fill='%233d5a7f' opacity='0.3'/%3E%3Cpath d='M80 100 L120 110 L150 100' stroke='%23D4AF37' stroke-width='1.5' fill='none'/%3E%3Cpath d='M170 100 L220 110 L270 100' stroke='%23D4AF37' stroke-width='1.5' fill='none'/%3E%3Cpath d='M300 100 L320 110 L340 100' stroke='%23D4AF37' stroke-width='1.5' fill='none'/%3E%3Ctext x='200' y='175' font-family='Inter' font-size='20' font-weight='800' fill='%23D4AF37' text-anchor='middle'%3EZAZEN%3C/text%3E%3Crect x='320' y='215' width='25' height='35' rx='2' fill='%23D4AF37'/%3E%3C/svg%3E"
+                             alt="ZAZEN ZZ-ICP-550"
+                             class="product-card-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">ZZ-ICP-550</h3>
+                        <div class="product-capacity">550 Liter Capacity</div>
+                        <ul class="product-features">
+                            <li>Triple-door access (60% less air loss)</li>
+                            <li>±0.5°C temperature stability</li>
+                            <li>2.9 kWh/day (40% energy savings)</li>
+                            <li>Pro Intelligence included (7-day prediction)</li>
+                            <li>Perfect for ice cream parlors</li>
+                        </ul>
+                        <div class="product-price">
+                            <div>
+                                <div class="price-value">₹1.85L</div>
+                                <div class="price-label">Starting price</div>
+                            </div>
+                            <a href="#order" class="btn btn-primary">Configure</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 700L Model -->
+                <div class="product-card fade-in-up">
+                    <div class="product-image-container">
+                        <div class="product-badge">Best Value</div>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 450 300'%3E%3Crect x='50' y='80' width='350' height='180' rx='8' fill='%231B2845'/%3E%3Crect x='55' y='85' width='340' height='170' rx='6' fill='%232a3f5f'/%3E%3Cpath d='M80 90 L170 90 L170 250 L80 250 Z' fill='%233d5a7f' opacity='0.3'/%3E%3Cpath d='M180 90 L310 90 L310 250 L180 250 Z' fill='%233d5a7f' opacity='0.5'/%3E%3Cpath d='M320 90 L385 90 L385 250 L320 250 Z' fill='%233d5a7f' opacity='0.3'/%3E%3Cpath d='M85 100 L125 110 L165 100' stroke='%23D4AF37' stroke-width='1.5' fill='none'/%3E%3Cpath d='M190 100 L245 110 L300 100' stroke='%23D4AF37' stroke-width='1.5' fill='none'/%3E%3Cpath d='M330 100 L355 110 L380 100' stroke='%23D4AF37' stroke-width='1.5' fill='none'/%3E%3Ctext x='225' y='175' font-family='Inter' font-size='22' font-weight='800' fill='%23D4AF37' text-anchor='middle'%3EZAZEN%3C/text%3E%3Crect x='360' y='215' width='28' height='38' rx='2' fill='%23D4AF37'/%3E%3C/svg%3E"
+                             alt="ZAZEN ZZ-ICP-700"
+                             class="product-card-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">ZZ-ICP-700</h3>
+                        <div class="product-capacity">700 Liter Capacity</div>
+                        <ul class="product-features">
+                            <li>27% more capacity than 550L</li>
+                            <li>Handles 80-120 door openings/day</li>
+                            <li>3.7 kWh/day energy consumption</li>
+                            <li>Optimized for high-traffic parlors</li>
+                            <li>~175 tubs (1L) ice cream capacity</li>
+                        </ul>
+                        <div class="product-price">
+                            <div>
+                                <div class="price-value">₹2.25L</div>
+                                <div class="price-label">Starting price</div>
+                            </div>
+                            <a href="#order" class="btn btn-primary">Configure</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 900L Model -->
+                <div class="product-card fade-in-up">
+                    <div class="product-image-container">
+                        <div class="product-badge">Enterprise</div>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 300'%3E%3Crect x='40' y='80' width='420' height='180' rx='8' fill='%231B2845'/%3E%3Crect x='45' y='85' width='410' height='170' rx='6' fill='%232a3f5f'/%3E%3Cpath d='M70 90 L185 90 L185 250 L70 250 Z' fill='%233d5a7f' opacity='0.3'/%3E%3Cpath d='M195 90 M350 90 L350 250 L195 250 Z' fill='%233d5a7f' opacity='0.5'/%3E%3Cpath d='M360 90 L440 90 L440 250 L360 250 Z' fill='%233d5a7f' opacity='0.3'/%3E%3Cpath d='M75 100 L130 110 L180 100' stroke='%23D4AF37' stroke-width='1.5' fill='none'/%3E%3Cpath d='M205 100 L275 110 L345 100' stroke='%23D4AF37' stroke-width='1.5' fill='none'/%3E%3Cpath d='M370 100 L405 110 L435 100' stroke='%23D4AF37' stroke-width='1.5' fill='none'/%3E%3Ctext x='250' y='175' font-family='Inter' font-size='24' font-weight='800' fill='%23D4AF37' text-anchor='middle'%3EZAZEN%3C/text%3E%3Crect x='415' y='215' width='30' height='40' rx='2' fill='%23D4AF37'/%3E%3C/svg%3E"
+                             alt="ZAZEN ZZ-ICP-900"
+                             class="product-card-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">ZZ-ICP-900</h3>
+                        <div class="product-capacity">900 Liter Capacity</div>
+                        <ul class="product-features">
+                            <li>29% more capacity than 700L</li>
+                            <li>Heavy-duty 24/7 commercial operation</li>
+                            <li>4.5 kWh/day energy consumption</li>
+                            <li>Ideal for distribution centers</li>
+                            <li>~225 tubs (1L) ice cream capacity</li>
+                        </ul>
+                        <div class="product-price">
+                            <div>
+                                <div class="price-value">₹2.65L</div>
+                                <div class="price-label">Starting price</div>
+                            </div>
+                            <a href="#order" class="btn btn-primary">Configure</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Selector Wizard -->
+    <section id="selector" style="background: var(--cream-light);">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <div class="section-label">AI-POWERED PRODUCT SELECTOR</div>
+                <h2 class="section-title">Find Your Perfect<br>Cold Chain Solution</h2>
+                <p class="section-description">
+                    Answer 3 simple questions and get instant AI-powered recommendations
+                    with pricing, ROI analysis, and configuration options.
+                </p>
+            </div>
+
+            <div class="product-selector fade-in-up">
+                <!-- Step 1: Business Type -->
+                <div class="wizard-step active" data-step="1">
+                    <h3 class="step-title">What's your business type?</h3>
+                    <div class="options-grid">
+                        <div class="option-card" data-option="parlor">
+                            <div class="option-title">🍦 Ice Cream Parlor</div>
+                            <p class="option-description">
+                                High foot traffic, frequent door openings,
+                                need for visual merchandising
+                            </p>
+                        </div>
+                        <div class="option-card" data-option="distribution">
+                            <div class="option-title">🥛 Dairy Distribution</div>
+                            <p class="option-description">
+                                Bulk storage, redistribution to retailers,
+                                large inventory capacity
+                            </p>
+                        </div>
+                        <div class="option-card" data-option="manufacturing">
+                            <div class="option-title">🏭 Manufacturing</div>
+                            <p class="option-description">
+                                Production facility, maximum efficiency,
+                                zero downtime tolerance
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Power Situation -->
+                <div class="wizard-step" data-step="2">
+                    <h3 class="step-title">What's your power situation?</h3>
+                    <div class="options-grid">
+                        <div class="option-card" data-option="reliable-grid">
+                            <div class="option-title">⚡ Reliable Grid Power</div>
+                            <p class="option-description">
+                                Stable 220V AC supply, <5 outages per year,
+                                backup generator available
+                            </p>
+                        </div>
+                        <div class="option-card" data-option="unreliable-grid">
+                            <div class="option-title">⚠️ Unreliable Grid</div>
+                            <p class="option-description">
+                                10-30 outages per year, no generator,
+                                need uninterrupted cold chain
+                            </p>
+                        </div>
+                        <div class="option-card" data-option="off-grid">
+                            <div class="option-title">☀️ Off-Grid / Rural</div>
+                            <p class="option-description">
+                                Remote location, no grid or very expensive,
+                                abundant sunlight available
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Intelligence Needs -->
+                <div class="wizard-step" data-step="3">
+                    <h3 class="step-title">What intelligence level do you need?</h3>
+                    <div class="options-grid">
+                        <div class="option-card" data-option="essentials">
+                            <div class="option-title">📊 Essentials (Free)</div>
+                            <p class="option-description">
+                                Basic monitoring, local control,
+                                30-day temperature logs
+                            </p>
+                        </div>
+                        <div class="option-card" data-option="pro">
+                            <div class="option-title">🚀 Pro (₹500/mo)</div>
+                            <p class="option-description">
+                                7-day failure prediction, automated compliance,
+                                energy analytics
+                            </p>
+                        </div>
+                        <div class="option-card" data-option="enterprise">
+                            <div class="option-title">💼 Enterprise (₹1,500/mo)</div>
+                            <p class="option-description">
+                                2-4 week prediction, API integration,
+                                dedicated account manager
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="wizard-step" data-step="4">
+                    <h3 class="step-title">Your Recommended Configuration</h3>
+                    <div id="wizard-results"></div>
+                </div>
+
+                <div class="wizard-navigation">
+                    <button class="btn btn-secondary" id="wizardBack" style="display: none;">← Back</button>
+                    <button class="btn btn-primary" id="wizardNext">Next →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <div class="section-label">CORE TECHNOLOGIES</div>
+                <h2 class="section-title">Engineering<br>That Never Sleeps</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">🧊</div>
+                    <h3 class="feature-title">Ice Crystal Prevention</h3>
+                    <p class="feature-description">
+                        EEV precision control maintains ±0.5°C stability.
+                        Smooth compressor ramping prevents coarse ice crystals.
+                    </p>
+                </div>
+
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">40% Energy Savings</h3>
+                    <p class="feature-description">
+                        BLDC variable-speed compressor modulates 2000-3500 RPM
+                        based on actual cooling demand. No wasteful on-off cycling.
+                    </p>
+                </div>
+
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">🔮</div>
+                    <h3 class="feature-title">2-4 Week Failure Prediction</h3>
+                    <p class="feature-description">
+                        Gemini AI analyzes vibration signatures and thermal patterns
+                        to predict failures weeks in advance with 87% confidence.
+                    </p>
+                </div>
+
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">☀️</div>
+                    <h3 class="feature-title">Solar Forecast Sync</h3>
+                    <p class="feature-description">
+                        Pre-cools during peak solar generation hours.
+                        Maximizes renewable energy utilization for off-grid deployments.
+                    </p>
+                </div>
+
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">🌿</div>
+                    <h3 class="feature-title">R290 Eco-Refrigerant</h3>
+                    <p class="feature-description">
+                        Natural propane refrigerant with GWP=3 (vs R134a=1,430).
+                        99.8% lower environmental impact + 10-15% better efficiency.
+                    </p>
+                </div>
+
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Fleet Intelligence Portal</h3>
+                    <p class="feature-description">
+                        Monitor all units from single dashboard. Cross-fleet learning
+                        continuously improves algorithms for all customers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section>
+        <div class="container">
+            <div class="cta-section fade-in-up">
+                <h2 class="cta-title">Ready to Transform Your Cold Chain?</h2>
+                <p class="cta-description">
+                    Join 100+ leading dairy and ice cream businesses who trust ZAZEN for
+                    precision cooling, predictive maintenance, and 40% energy savings.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#order" class="btn btn-cta">Place Order Now</a>
+                    <a href="#demo" class="btn btn-secondary" style="color: white; border-color: white;">Book Free Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <div class="footer-brand">
+                    <div class="logo-square">Z</div>
+                    <span class="logo-text">ZAZEN SYSTEMS</span>
+                </div>
+                <p class="footer-description">
+                    Intelligence-First Cold Chain Platform. Precision Cooling.
+                    Solar-Native. IoT-Driven.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Products</h4>
+                <ul class="footer-links">
+                    <li><a href="#products">Ice Cream Series</a></li>
+                    <li><a href="#products">Motion-Pro Series</a></li>
+                    <li><a href="#products">Industrial-Smart</a></li>
+                    <li><a href="#products">Retrofit Kits</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="#selector">Product Selector</a></li>
+                    <li><a href="#">ROI Calculator</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Documentation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 ZAZEN SYSTEMS. All rights reserved. | Bangalore, Karnataka, India
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // 3D Product Viewer - Mouse tracking
+        const product3d = document.getElementById('product3d');
+        const productImg = document.getElementById('productImg');
+
+        product3d.addEventListener('mousemove', (e) => {
+            const rect = product3d.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            const rotateY = ((x - centerX) / centerX) * 15;
+            const rotateX = ((centerY - y) / centerY) * 15;
+
+            productImg.style.setProperty('--rotate-y', `${rotateY}deg`);
+            productImg.style.setProperty('--rotate-x', `${rotateX}deg`);
+        });
+
+        product3d.addEventListener('mouseleave', () => {
+            productImg.style.setProperty('--rotate-y', '0deg');
+            productImg.style.setProperty('--rotate-x', '0deg');
+        });
+
+        // Parallax scrolling effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.parallax');
+
+            parallaxElements.forEach(el => {
+                const speed = el.dataset.speed || 0.5;
+                el.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+
+        // Fade-in-up animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Product Selector Wizard
+        let wizardData = {
+            businessType: null,
+            power: null,
+            intelligence: null
+        };
+
+        let currentStep = 1;
+
+        // Option selection
+        document.querySelectorAll('.option-card').forEach(card => {
+            card.addEventListener('click', () => {
+                // Remove selected from siblings
+                card.parentElement.querySelectorAll('.option-card').forEach(c => {
+                    c.classList.remove('selected');
+                });
+
+                // Add selected to clicked card
+                card.classList.add('selected');
+
+                // Store selection
+                const option = card.dataset.option;
+                const step = card.closest('.wizard-step').dataset.step;
+
+                if (step === '1') wizardData.businessType = option;
+                if (step === '2') wizardData.power = option;
+                if (step === '3') wizardData.intelligence = option;
+
+                // Enable next button
+                document.getElementById('wizardNext').disabled = false;
+            });
+        });
+
+        // Wizard navigation
+        document.getElementById('wizardNext').addEventListener('click', () => {
+            if (currentStep < 4) {
+                // Hide current step
+                document.querySelector(`[data-step="${currentStep}"]`).classList.remove('active');
+
+                // Show next step
+                currentStep++;
+                document.querySelector(`[data-step="${currentStep}"]`).classList.add('active');
+
+                // Update navigation buttons
+                document.getElementById('wizardBack').style.display = 'block';
+
+                if (currentStep === 4) {
+                    generateRecommendation();
+                    document.getElementById('wizardNext').textContent = 'Start Over';
+                }
+            } else {
+                // Reset wizard
+                currentStep = 1;
+                document.querySelector(`[data-step="4"]`).classList.remove('active');
+                document.querySelector(`[data-step="1"]`).classList.add('active');
+                document.getElementById('wizardBack').style.display = 'none';
+                document.getElementById('wizardNext').textContent = 'Next →';
+
+                // Clear selections
+                document.querySelectorAll('.option-card').forEach(c => c.classList.remove('selected'));
+                wizardData = { businessType: null, power: null, intelligence: null };
+            }
+        });
+
+        document.getElementById('wizardBack').addEventListener('click', () => {
+            if (currentStep > 1) {
+                // Hide current step
+                document.querySelector(`[data-step="${currentStep}"]`).classList.remove('active');
+
+                // Show previous step
+                currentStep--;
+                document.querySelector(`[data-step="${currentStep}"]`).classList.add('active');
+
+                // Update navigation
+                if (currentStep === 1) {
+                    document.getElementById('wizardBack').style.display = 'none';
+                }
+
+                document.getElementById('wizardNext').textContent = 'Next →';
+            }
+        });
+
+        // Generate AI-powered recommendation
+        function generateRecommendation() {
+            const resultsDiv = document.getElementById('wizard-results');
+
+            // AI logic to recommend products based on wizard answers
+            let recommendedModel = 'ZZ-ICP-550';
+            let price = '₹1,85,000';
+            let powerOption = 'Standard AC';
+            let powerPrice = '₹0';
+            let subscription = 'Essentials (Free)';
+            let subscriptionPrice = '₹0';
+
+            // Business type logic
+            if (wizardData.businessType === 'parlor') {
+                recommendedModel = 'ZZ-ICP-550';
+                price = '₹1,85,000';
+            } else if (wizardData.businessType === 'distribution') {
+                recommendedModel = 'ZZ-ICP-700 (2 units)';
+                price = '₹4,50,000';
+            } else if (wizardData.businessType === 'manufacturing') {
+                recommendedModel = 'ZZ-ICP-900';
+                price = '₹2,65,000';
+            }
+
+            // Power logic
+            if (wizardData.power === 'reliable-grid') {
+                powerOption = 'Standard AC Power';
+                powerPrice = '₹0 (included)';
+            } else if (wizardData.power === 'unreliable-grid') {
+                powerOption = 'AC-DC Hybrid with Battery Backup';
+                powerPrice = '+₹12,000';
+            } else if (wizardData.power === 'off-grid') {
+                powerOption = 'Solar-Ready Package (1kW solar + 48V 50Ah battery)';
+                powerPrice = '+₹85,000';
+            }
+
+            // Intelligence logic
+            if (wizardData.intelligence === 'essentials') {
+                subscription = 'Essentials (Free)';
+                subscriptionPrice = '₹0/month';
+            } else if (wizardData.intelligence === 'pro') {
+                subscription = 'Pro Intelligence';
+                subscriptionPrice = '₹500/month';
+            } else if (wizardData.intelligence === 'enterprise') {
+                subscription = 'Enterprise Intelligence';
+                subscriptionPrice = '₹1,500/month';
+            }
+
+            resultsDiv.innerHTML = `
+                <div style="background: var(--cream-light); padding: 32px; border-radius: 12px; margin-bottom: 24px;">
+                    <h4 style="font-size: 24px; color: var(--navy-primary); margin-bottom: 16px;">Recommended Configuration</h4>
+                    <div style="display: grid; gap: 16px;">
+                        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--gray-light);">
+                            <span style="font-weight: 600;">Model:</span>
+                            <span>${recommendedModel}</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--gray-light);">
+                            <span style="font-weight: 600;">Base Price:</span>
+                            <span>${price}</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--gray-light);">
+                            <span style="font-weight: 600;">Power Option:</span>
+                            <span>${powerOption}</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--gray-light);">
+                            <span style="font-weight: 600;">Power Cost:</span>
+                            <span>${powerPrice}</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--gray-light);">
+                            <span style="font-weight: 600;">Intelligence:</span>
+                            <span>${subscription}</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--gray-light);">
+                            <span style="font-weight: 600;">Subscription:</span>
+                            <span>${subscriptionPrice}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: var(--navy-primary); color: var(--white); padding: 24px; border-radius: 12px; margin-bottom: 24px;">
+                    <h4 style="font-size: 18px; margin-bottom: 12px; color: var(--gold-accent);">Estimated ROI</h4>
+                    <p style="font-size: 14px; opacity: 0.9; margin-bottom: 16px;">
+                        Based on your configuration, you can expect:
+                    </p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 8px;">✓ Annual energy savings: ₹40,000-55,000</li>
+                        <li style="margin-bottom: 8px;">✓ Prevented spoilage: ₹30,000-50,000/year</li>
+                        <li style="margin-bottom: 8px;">✓ Payback period: 2.5-3.5 years</li>
+                    </ul>
+                </div>
+
+                <div style="display: flex; gap: 16px; justify-content: center;">
+                    <a href="#order" class="btn btn-primary">Place Order</a>
+                    <a href="#demo" class="btn btn-secondary">Book Demo</a>
+                </div>
+            `;
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
