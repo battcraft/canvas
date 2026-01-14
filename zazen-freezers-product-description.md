@@ -276,6 +276,247 @@ ZAZEN supports eco-friendly R290 (propane) refrigerant with near-zero environmen
 
 ---
 
+## Power System Options
+
+ZAZEN SYSTEMS offers flexible power configurations to match any deployment scenario, from mobile food trucks to large-scale cold storage facilities.
+
+### **Individual Unit Power Options (Up to 3.5kW Systems)**
+
+| **Power Configuration** | **Voltage Range** | **Capacity Range** | **Ideal Applications** | **Key Benefits** |
+|------------------------|-------------------|-------------------|------------------------|------------------|
+| **12V DC Native** | 11-14V DC | 200-400L | Mobile food trucks, ambulances, small delivery vans | Direct vehicle battery integration, zero inverter losses |
+| **24V DC Native** | 20-28V DC | 400-800L | Medium trucks, refrigerated vans, marine applications | Standard commercial vehicle voltage, efficient power distribution |
+| **48V DC Native** | 40-60V DC | 500-1200L | Electric delivery vehicles, solar-powered systems, off-grid | Optimal for solar arrays, battery banks, hybrid EV systems |
+| **60V DC High-Power** | 48-72V DC | 800-1400L | Heavy-duty refrigerated transport, industrial mobile cold storage | Maximum cooling capacity, rapid pulldown, extreme ambient tolerance |
+| **Solar Direct (48V)** | 48V DC (PV direct) | 200-1200L | Off-grid rural, dairy cooperatives, remote medical facilities | No inverter required, 8-12% efficiency gain, zero fuel costs |
+| **AC-DC Hybrid** | 230V AC + 48V DC | 200-3500W systems | Stationary with backup, grid + solar hybrid, peak shaving | Grid primary, solar/battery backup, demand charge optimization |
+
+### **Power System Architecture Details**
+
+**12V-48V DC Systems:**
+- **Direct Connection**: Battery/EV power → DC-DC converter → Compressor + Controls
+- **No Inverter Loss**: 8-12% more efficient than AC systems requiring inverters
+- **Soft Start**: 2-3A inrush (vs 15-25A for AC compressors)
+- **Voltage Protection**: Automatic cutoff at low voltage to protect vehicle/solar batteries
+- **Solar Integration**: Direct MPPT controller connection to 48V battery bank
+
+**60V DC High-Power Systems:**
+- **Higher Capacity**: 1400-3500W cooling capacity (vs 320-1400W for 48V)
+- **Commercial Transport**: Refrigerated trucks, shipping containers, large mobile units
+- **Rapid Pulldown**: 25°C to -20°C in <3 hours (empty 1200L unit)
+- **Hot Climate Performance**: Maintains -20°C in +45°C ambient conditions
+
+**AC-DC Hybrid Configuration:**
+- **Primary**: 230V AC grid power for normal operation
+- **Backup**: Automatic switchover to 48V battery during outages
+- **Solar Charging**: PV panels charge battery bank during daytime
+- **Peak Shaving**: Run on battery during high-tariff hours, charge during off-peak
+
+### **Multi-Unit Power Distribution (2-10 Units)**
+
+For installations with 2-10 freezers at a single location:
+
+**Centralized DC Bus Architecture:**
+- Single 48V/60V DC power supply (10-30kW capacity)
+- Distributed to individual units via heavy-gauge copper bus bars
+- Individual circuit breakers and monitoring per unit
+- Common solar array and battery bank (optional)
+- Reduces overall system cost by 20-30% vs individual power supplies
+
+**Example: 5-Unit QSR Kitchen Setup**
+- 5× ZZ-500 freezers (500L each)
+- Combined power: ~2.5kW average (5× 500W)
+- Single 5kW AC-DC power supply: ₹35,000 (vs 5× ₹8,000 = ₹40,000 individual)
+- Single 5kW solar array + 48V 200Ah battery: ₹85,000
+- Total system cost reduction: ₹15,000-25,000
+
+---
+
+## Next-Generation Technology: Centralized Refrigeration Systems
+
+### **ZAZEN Pipeline Architecture (In Development - 2026 Launch)**
+
+**Revolutionary Approach**: Multiple freezer cabinets connected to a single outdoor condensing unit via refrigerant pipelines, similar to VRF (Variable Refrigerant Flow) HVAC systems but optimized for commercial refrigeration.
+
+### **System Overview**
+
+Instead of individual condensing units per freezer:
+- **Traditional**: Each freezer has its own compressor, condenser, and outdoor unit
+- **ZAZEN Pipeline**: One centralized outdoor unit serves 2-10+ freezer cabinets via refrigerant lines
+
+### **Technical Architecture**
+
+**Indoor Units (Distributed Freezer Cabinets):**
+- **Plate Heat Exchanger (PHE)** evaporators instead of finned-tube coils
+- Compact, high-efficiency heat transfer (30-40% smaller than air-cooled evaporators)
+- Electronic Expansion Valve (EEV) per cabinet for individual zone control
+- Smart temperature controller with zone management
+- Refrigerant distribution manifold with isolation valves
+
+**Outdoor Unit (Centralized Condensing System):**
+- **Single Variable-Speed BLDC Compressor** (3.5-15kW capacity)
+- **Air-Cooled Condenser** with variable-speed fans
+- **Astra Master Controller** orchestrates entire system
+- **Refrigerant Distribution Header** with branch circuits to each cabinet
+- **Oil Management System** for long-line installations
+
+**Pipeline Distribution:**
+- **Refrigerant Lines**: Insulated copper tubing (liquid + suction lines)
+- **Maximum Distance**: 50m horizontal, 10m vertical differential
+- **R290 Natural Refrigerant**: Low charge quantity (50-80g per 500L cabinet)
+- **Quick-Connect Fittings**: Modular installation, easy expansion
+
+### **Key Advantages vs. Individual Condensing Units**
+
+| **Feature** | **Traditional (Individual Units)** | **ZAZEN Pipeline System** |
+|-------------|-----------------------------------|---------------------------|
+| **Installation Complexity** | Each unit requires outdoor space, mounting, wiring | Single outdoor unit, refrigerant lines to cabinets |
+| **Outdoor Space Required** | 5 units = 5 outdoor condensers | 5 units = 1 outdoor condenser |
+| **Energy Efficiency** | Each unit operates independently | Load-balanced, optimized for aggregate demand |
+| **Maintenance** | 5 compressors to service | 1 compressor to service |
+| **Noise Level** | 5× 55-65 dB sources | 1× 55-65 dB source (often roof-mounted away from workspace) |
+| **System Cost (5 units)** | 5× individual systems | 30-40% lower total cost |
+| **Scalability** | Add new unit = full new system | Add cabinet = extend refrigerant line |
+| **Redundancy** | One compressor fails = one freezer down | Optional dual-compressor outdoor unit for redundancy |
+
+### **Plate Heat Exchanger (PHE) Advantages**
+
+**Why PHE vs. Traditional Finned-Tube Evaporators?**
+
+✅ **Compact Design**: 40-50% smaller footprint vs. finned coils
+✅ **Higher Efficiency**: 15-25% better heat transfer coefficient
+✅ **Easier Cleaning**: Removable plates, no fin corrosion
+✅ **Faster Defrost**: Lower thermal mass, 30-40% faster defrost cycles
+✅ **Reduced Refrigerant Charge**: 30-50% less refrigerant per cabinet
+✅ **Better Temperature Uniformity**: More even temperature distribution in cabinet
+
+**PHE Technical Specifications:**
+- **Material**: Stainless steel plates with brazed construction
+- **Capacity**: 500W-1500W per cabinet (scalable)
+- **Refrigerant Side**: R290 in vapor-compression cycle
+- **Air Side**: Forced convection with EC fans
+- **Temperature Approach**: 3-5°C (vs 8-10°C for finned coils)
+
+### **System Configurations**
+
+**Small Installation (2-5 Cabinets):**
+- Outdoor Unit: 3.5kW single-compressor
+- Total Cooling Capacity: 2000-3500W
+- Typical Application: Small QSR, café, boutique grocery
+- System Cost: ₹2,20,000 - ₹3,50,000 (complete)
+
+**Medium Installation (5-10 Cabinets):**
+- Outdoor Unit: 7kW single-compressor
+- Total Cooling Capacity: 4000-7000W
+- Typical Application: Large restaurant, supermarket, cloud kitchen
+- System Cost: ₹4,50,000 - ₹7,20,000 (complete)
+
+**Large Installation (10-20 Cabinets):**
+- Outdoor Unit: 15kW dual-compressor (redundancy)
+- Total Cooling Capacity: 8000-15000W
+- Typical Application: Cold storage facility, distribution center
+- System Cost: ₹9,00,000 - ₹15,00,000 (complete)
+
+### **Control System Intelligence**
+
+**Astra Master Controller Capabilities:**
+- **Load Balancing**: Prioritizes cabinets with highest cooling demand
+- **Capacity Modulation**: Adjusts compressor speed to match aggregate load
+- **Fault Isolation**: Isolates failed cabinet without shutting down entire system
+- **Predictive Defrost**: Staggers defrost cycles to maintain system capacity
+- **Energy Optimization**: Operates at most efficient point for combined load
+- **Remote Monitoring**: Single IoT gateway for entire system
+
+### **Installation Process**
+
+**Phase 1: Outdoor Unit Installation (Day 1)**
+1. Mount outdoor condensing unit (roof/wall/ground)
+2. Install refrigerant distribution header
+3. Run main refrigerant lines to distribution points
+4. Electrical connection and commissioning
+
+**Phase 2: Cabinet Integration (Days 2-3)**
+1. Replace existing evaporators with PHE units in each cabinet
+2. Connect refrigerant branch circuits from header to each PHE
+3. Install EEV controllers and zone sensors
+4. Pressure test and leak detection
+
+**Phase 3: System Commissioning (Day 4)**
+1. Evacuate entire system
+2. Charge with R290 refrigerant (total charge: 200-800g for 5-10 cabinets)
+3. Commission Astra controller with all zones
+4. Temperature and performance verification
+5. Operator training
+
+**Total Installation Time**: 3-4 days for 5-cabinet system (vs 2-3 days for individual retrofits)
+
+### **Energy Savings Comparison**
+
+**Example: 5-Cabinet Restaurant Installation**
+
+| **Configuration** | **Daily Energy (kWh)** | **Annual Cost (@₹7.5/kWh)** | **Maintenance/Year** |
+|-------------------|------------------------|----------------------------|----------------------|
+| **Traditional Individual Units** | 12.5 kWh | ₹34,220 | ₹25,000 (5 units) |
+| **ZAZEN Individual Retrofits** | 7.5 kWh (40% savings) | ₹20,530 | ₹15,000 (5 units) |
+| **ZAZEN Pipeline System** | 6.2 kWh (50% savings) | ₹16,970 | ₹8,000 (1 unit) |
+
+**Additional Pipeline System Savings:**
+- Maintenance: ₹7,000/year (1 compressor vs 5)
+- Downtime: 60% reduction (faster service, no multi-unit coordination)
+- Space Utilization: Outdoor space freed for other uses
+- **Total 5-Year Savings**: ₹1,25,000 vs individual retrofits
+
+### **Redundancy Options**
+
+**Dual-Compressor Outdoor Unit:**
+- Two independent compressor circuits
+- Each capable of 60% system capacity
+- Automatic failover in <30 seconds
+- Critical for pharma, medical, high-value inventory
+- Additional cost: +₹85,000 - ₹1,25,000
+
+**Hot Gas Bypass for Critical Cabinets:**
+- Maintains temperature in 2-3 "critical" cabinets during compressor failure
+- Uses stored refrigerant pressure to provide temporary cooling
+- Extends critical cabinet runtime by 2-4 hours during failure
+- Allows time for emergency service response
+
+### **Target Markets for Pipeline Systems**
+
+**Ideal For:**
+- **QSR Chains**: Standardized kitchen layouts, multiple freezers per location
+- **Supermarkets**: Centralized back-of-house cold storage, multiple walk-in units
+- **Cloud Kitchens**: Multi-tenant shared commercial kitchen facilities
+- **Cold Storage Facilities**: Warehouse with multiple chambers/zones
+- **Hotels & Resorts**: Centralized F&B cold storage, banquet facilities
+- **Institutional Kitchens**: Hospitals, schools, corporate cafeterias
+
+**Not Ideal For:**
+- Single freezer locations
+- Mobile/vehicle applications
+- Off-grid rural installations (prefer individual solar-powered units)
+- Retail storefronts (outdoor unit placement challenges)
+
+### **Roadmap & Availability**
+
+**Phase 1 (Q2 2026):** Pilot installations with 3-5 partner customers
+**Phase 2 (Q3 2026):** Commercial launch for 2-10 cabinet systems
+**Phase 3 (Q4 2026):** Large-scale systems (10-20 cabinets) with dual-compressor options
+**Phase 4 (2027):** Hybrid pipeline + individual systems for mixed installations
+
+**Early Adopter Program:**
+- 20% discount for first 20 installations
+- Free extended warranty (5 years comprehensive)
+- Priority technical support and training
+- Co-marketing case studies
+
+### **Contact for Pipeline System Inquiries**
+
+📧 pipeline@zazensystems.com
+📞 +91-XXXX-XXXXXX (Pipeline Systems Division)
+
+---
+
 ## Target Applications & Market Segments
 
 ### Quick Service Restaurants (QSR) & Food Service
