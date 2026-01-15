@@ -24,7 +24,7 @@ All deliverables have been created, tested, and pushed to repository: `claude/za
 **Sections:**
 1. **Hero Section**: 3D product visualization, stats (±0.5°C, 40% savings, 24/7 monitoring)
 2. **Cold Chain Solutions**: Ice cream, dairy, pharmaceutical, logistics cards
-3. **Product Showcase**: ZZ-ICP-550/700/900 models with pricing
+3. **Product Showcase**: Motion-Pro, Industrial-Smart, and Titan series with pricing
 4. **Product Selector Wizard**: AI-powered 3-step configuration tool
 5. **Features Grid**: Core technologies (ice crystal prevention, energy savings, failure prediction)
 6. **CTA Section**: Call-to-action with order/demo buttons
@@ -38,55 +38,19 @@ All deliverables have been created, tested, and pushed to repository: `claude/za
 
 ---
 
-### 2. **Updated Product Specifications** (`zazen-updated-specifications.md`)
+### 2. **Product Line Correction & Archive**
 
-**Based on Real Market Research:**
-- [Rockwell GFR550](https://www.indiamart.com/proddetail/rockwell-gfr550-eutectic-glycol-freezer-16740400912.html): 523L, ₹30,400-₹51,000
-- [Rockwell GFR910](https://www.rahaindia.net/rockwell-deep-freezer.html): 695L, ₹45,500
-- [Blue Star CHFDD500MGPW](https://www.moglix.com/blue-star-500l-hard-top-double-door-deep-freezer-chfdd500mgpw/mp/msnrkrele3q39n): 484L, ₹31,519
-- [Voltas CVF500DD-P](https://deepfreezersmart.com/p/voltas-cvf500dd-p-convertible/): 500L, 4-star energy
+**Note**: Initial documentation included an Ice Cream Professional Series (ZZ-ICP-550/700/900) which has been **archived** to `/home/user/canvas/archive/` as it was not part of the actual product lineup.
 
-**Contents:**
-- Detailed comparison tables (ZAZEN vs Traditional competitors)
-- Performance specifications with real energy consumption data
-- ROI analysis (5-year TCO calculations)
-- Retrofit strategy recommendations (better economics than new units for existing fleets)
-- Pricing justification (4-5× premium explained with ₹31K-41K annual value)
+**Archived Files:**
+- `archive/zazen-updated-specifications.md` - Market research and ZZ-ICP series specifications
+- `archive/zazen-dairy-ice-cream-product-line.md` - Complete dairy/ice cream client guide
 
-**Key Findings:**
-- **Retrofit ROI**: 6.5 years payback (vs 9.0 years for new unit)
-- **Energy savings**: ₹5,205-₹8,213/year per unit
-- **Prevented spoilage**: ₹8,000-₹15,000/year with 7-day failure prediction
-- **Recommendation**: Retrofit for cost-sensitive markets, new units for customer-facing premium applications
-
----
-
-### 3. **Dairy/Ice Cream Product Line Documentation** (`zazen-dairy-ice-cream-product-line.md`)
-
-**Complete Product Guide for First Client:**
-
-**Three Models:**
-- **ZZ-ICP-550** (550L): ₹1,85,000-₹2,70,000
-- **ZZ-ICP-700** (700L): ₹2,25,000-₹3,15,000
-- **ZZ-ICP-900** (900L): ₹2,65,000-₹3,60,000
-
-**Pre-Configured Bundles:**
-1. **Ice Cream Parlor Starter** (₹1,93,000): 1× 550L + Pro Intelligence + training
-2. **Dairy Distribution Pro** (₹4,60,000): 2× 700L + fleet dashboard + 3-year warranty
-3. **Rural Dairy Solar Package** (₹3,60,000 pre-subsidy): 1× 900L + 1.5kW solar + battery (eligible for 30-50% NABARD subsidy)
-4. **Enterprise Dairy Fleet** (₹12,50,000): 5× 900L + Enterprise Intelligence + dedicated account manager
-
-**Product Selector Wizard** (3 steps):
-- Step 1: Business type (parlor, distribution, manufacturing)
-- Step 2: Power situation (reliable grid, unreliable, off-grid)
-- Step 3: Intelligence needs (Essentials free, Pro ₹500/mo, Enterprise ₹1,500/mo)
-- Result: AI-powered recommendation with pricing and ROI
-
-**Multiple CTAs:**
-- Place Order (online ordering)
-- Book Demo (virtual, showroom, on-site pilot)
-- Apply for Subsidy (NABARD/MOFPI support, 30-50% cost reduction)
-- Schedule Consultation (for enterprise/multi-location)
+**Current Product Lines** (as documented in `ZAZEN-OFFERINGS-SUMMARY.md`):
+1. **Motion-Pro Series** (200-500L): Mobile, off-grid, solar-ready (₹85K-₹2.45L)
+2. **Industrial-Smart Series** (598-1360L): Stationary QSR/supermarket applications (₹1.5L-₹3.8L)
+3. **Titan Series** (3.6-3.8kW): Heavy-duty walk-in coolers and transport (₹2.8L-₹4.5L)
+4. **Smart Retrofit Kits**: Upgrade existing freezers (₹40K-₹1.6L)
 
 ---
 
@@ -153,29 +117,34 @@ All deliverables have been created, tested, and pushed to repository: `claude/za
 
 ---
 
-## 📊 Technical Specifications Summary
+## 📊 Current Product Lines Specifications
 
-### ZZ-ICP-550 (550L) - Most Popular
-- **Energy**: 2.9 kWh/day (40% savings vs traditional 4.8 kWh)
-- **Temperature**: -22°C to -24°C, ±0.5°C stability
-- **Dimensions**: 1648×720×857mm, 72kg
-- **Annual Savings**: ₹5,205 (energy) + ₹6,000 (spoilage) = ₹11,205/year
-- **ROI**: 9.0 years (energy alone) or 5.3 years (with productivity gains)
-- **Price**: ₹1,85,000 base, ₹1,93,000 with HMI touchscreen
+### Motion-Pro ZF-500M - Mobile Applications
+- **Power**: 12V-48V DC native (no inverter loss)
+- **Capacity**: 500L
+- **Temperature**: -20°C to +5°C adjustable
+- **Features**: GPS-aware pre-loading, solar-ready, vibration-proof
+- **Applications**: Food trucks, delivery vans, ambulances, off-grid storage
+- **ROI**: 2-3 years (fuel savings vs diesel generators)
+- **Price**: ₹1,70,000-₹2,45,000
 
-### ZZ-ICP-700 (700L) - Best Value
-- **Energy**: 3.7 kWh/day (40% savings vs traditional 6.2 kWh)
-- **Capacity**: 27% more than 550L (~175 tubs of 1L ice cream)
-- **Annual Savings**: ₹6,840 (energy) + ₹8,000 (spoilage) = ₹14,840/year
-- **ROI**: 12.1 years (energy alone) or 7.2 years (with productivity gains)
-- **Price**: ₹2,25,000 base, ₹2,33,000 with HMI
+### Industrial-Smart ZF-1188S - Stationary Operations
+- **Power**: 220V AC or 48V DC hybrid
+- **Capacity**: 998L
+- **Temperature**: -22°C to +5°C, ±0.5°C stability
+- **Intelligence**: 2-4 week failure prediction
+- **Applications**: QSR chains, supermarkets, cold storage
+- **Annual Savings**: 25-40% energy reduction + spoilage prevention
+- **Price**: ₹2,35,000-₹3,20,000
 
-### ZZ-ICP-900 (900L) - Enterprise
-- **Energy**: 4.5 kWh/day (40% savings vs traditional 7.5 kWh)
-- **Capacity**: 29% more than 700L (~225 tubs of 1L ice cream)
-- **Annual Savings**: ₹8,213 (energy) + ₹10,000 (spoilage) = ₹18,213/year
-- **ROI**: 10.3 years (energy alone) or 6.5 years (with productivity)
-- **Price**: ₹2,65,000 base, ₹2,73,000 with HMI
+### Titan ZT-298 - Heavy-Duty Cooling
+- **Power**: 48V DC high-power system
+- **Cooling Capacity**: 3.6kW @ 0°C
+- **Pulldown Time**: <3 hours to -20°C
+- **Ambient Tolerance**: Up to +45°C
+- **Applications**: Walk-in coolers, refrigerated transport, industrial cooling
+- **ROI**: 2-4 years (vs diesel reefer units)
+- **Price**: ₹2,80,000-₹3,60,000
 
 ---
 

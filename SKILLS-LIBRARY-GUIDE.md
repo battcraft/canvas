@@ -39,7 +39,7 @@ Use the case-study skill to document ABC Restaurant's 37% energy savings across 
 
 **Example usage**:
 ```
-Use product-description skill for the ZZ-ICP-700 targeting high-traffic ice cream parlors
+Use product-description skill for the ZF-1188S Industrial-Smart targeting QSR chains
 ```
 
 **Perfect for**: Product launches, SKU updates, sales collateral, catalog content
@@ -77,7 +77,7 @@ Use sales-email skill targeting QSR operations director at 20-location chain
 
 **Example usage**:
 ```
-Use frontend-design skill to create an interactive product configurator for ZZ-ICP-700
+Use frontend-design skill to create an interactive product configurator for Motion-Pro series
 ```
 
 **Perfect for**: Landing pages, dashboards, web components, marketing microsites
@@ -154,7 +154,7 @@ Use pptx skill to create sales pitch deck for ZAZEN Ice Cream Professional Serie
 
 **Example usage**:
 ```
-Use docx skill to create detailed technical specification document for ZZ-ICP-700
+Use docx skill to create detailed technical specification document for ZT-298 Titan series
 ```
 
 **Perfect for**: Technical docs, proposals, contracts, reports, specifications
@@ -223,7 +223,7 @@ Describe what you want and I'll automatically use the right skill:
 ### Example 1: Complete Sales Kit
 ```
 1. Use frontend-design: Interactive product selector on website
-2. Use pptx: Sales pitch deck (15 slides with ZZ-ICP-550/700/900)
+2. Use pptx: Sales pitch deck (15 slides with Motion-Pro, Industrial-Smart, Titan)
 3. Use pdf: Product catalog (6-page print-ready document)
 4. Use docx: Detailed technical specifications
 5. Use case-study: 3 customer success stories with ROI
@@ -326,7 +326,7 @@ Create once, export many ways:
 
 **Option 1: Sales Materials**
 - Pitch deck for investor/customer meetings
-- Product catalog with all models
+- Product catalog with Motion-Pro, Industrial-Smart, and Titan series
 - Case studies with real ROI data
 
 **Option 2: Marketing Content**

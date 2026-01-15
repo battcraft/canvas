@@ -168,7 +168,7 @@
 **Target**: Boutique stores, high-end supermarkets
 
 **Includes**:
-- 2× ZZ-3D-PRO-500 (customer-facing premium units)
+- 2× ZF-500M Motion-Pro (customer-facing premium units)
 - 3× ZZ-RETRO-STD (back-of-house)
 - ZZ-CONNECT Basic (lifetime)
 - White-glove installation and training
